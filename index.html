@@ -3,70 +3,146 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Meusriscos by rogeroli</title>
-
+    <title>Meus Riscos by rogeroli</title>
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <script src="javascripts/scale.fix.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/respond.js"></script>
     <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="stylesheets/ie.css">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
   </head>
   <body>
+      <div id="header">
+        <nav>
+          <li class="fork"><a href="https://github.com/rogeroli/meusriscos">View On GitHub</a></li>
+          <li class="downloads"><a href="https://github.com/rogeroli/meusriscos/zipball/master">ZIP</a></li>
+          <li class="downloads"><a href="https://github.com/rogeroli/meusriscos/tarball/master">TAR</a></li>
+          <li class="title">DOWNLOADS</li>
+        </nav>
+      </div><!-- end header -->
+
     <div class="wrapper">
-      <header>
-        <h1 class="header">Meusriscos</h1>
-        <p class="header">Projeto de Programação em scripts. </p>
 
-        <ul>
-          <li class="download"><a class="buttons" href="https://github.com/rogeroli/meusriscos/zipball/master">Download ZIP</a></li>
-          <li class="download"><a class="buttons" href="https://github.com/rogeroli/meusriscos/tarball/master">Download TAR</a></li>
-          <li><a class="buttons github" href="https://github.com/rogeroli/meusriscos">View On GitHub</a></li>
-        </ul>
-
-        <p class="header">This project is maintained by <a class="header name" href="https://github.com/rogeroli">rogeroli</a></p>
-
-
-      </header>
       <section>
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+        <div id="title">
+          <h1>Meus Riscos</h1>
+          <p>Projeto de Programação em scripts. </p>
+          <hr>
+          <span class="credits left">Project maintained by <a href="https://github.com/rogeroli">rogeroli</a></span>
+          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
+        </div>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+        <h2>
+<a name="realizei-as-configura%C3%A7%C3%B5es-no-ambiente-linux-kubuntu-1404" class="anchor" href="#realizei-as-configura%C3%A7%C3%B5es-no-ambiente-linux-kubuntu-1404"><span class="octicon octicon-link"></span></a>Realizei as configurações no ambiente <strong>Linux Kubuntu 14.04</strong>.</h2>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
+<p><strong># Vídeo I – Configuração básica do ambiente.</strong></p>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+<ul>
+<li>Conferir a versão do python instalada, no meu caso a versão já instalada é 2.7.6 (comando: python –version).</li>
+<li>Instalação do virtualenv (comando: apt-get install python-virtualenv).</li>
+</ul><p><strong>## Vídeo II – Projeto tekton.</strong></p>
 
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
+<ul>
+<li>Realizado o download do appengine diretamente do fabricante (google) , e descompactado o arquivo .tar.gz na pasta de minha escolha /home/programas/ .</li>
+<li>Configurado o arquivo .bashrc para que sempre a variável de ambiente configure o path do appengine. No meu caso foi necessário incluir a linha: export PATH=/home/rogerio/programas/google_appengine:$PATH . Para o path funcionar corretamente foi necessário reiniciar o todo ambiente.</li>
+<li>Testado a configuração do path corretamente após a reinicialização do ambiente.</li>
+<li>Com boa parte do ambiente configurado, foi realizado o download do projeto tekton.</li>
+<li>Após o download, foi necessário instalar as bibliotecas necessárias para rodar o projeto tekton. Para isso foi executado o arquivo venv.sh .</li>
+<li>Com as bibliotecas instaladas foi realizado um teste no meu servidor local (localhost:8080), abrindo a página inicial do projeto tekton pelo browser.</li>
+</ul><p><strong>## Vídeo III – Pycharm</strong></p>
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+<ul>
+<li>Realizado o download da IDE pycharm pela página do próprio fabricante. Uma das vantagens de se utilizar uma IDE é a opção de DEBUGAR o código fonte. </li>
+<li>Com o pycharm instalado, foi aberto o projeto TEKTON .</li>
+<li>Configurado o interpretador do projeto juntamente com o ambiente virtual já criado anteriormente.</li>
+<li>Setada as pastas apps, appengine e test, indicando que são pastas de códigos fontes</li>
+<li>Compilado o código fonte e executado o projeto, abrindo-o no servidor local localhost:8080.</li>
+</ul><hr><p>Respostas dos capítulos I, II e III .</p>
 
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
+<p><strong>## Capítulo I</strong>
+1. Quais as duas principais versões atuais do interpretador Python?
+    As duas principais versões atuais do interpretador Python são 2.7 e 3.4.</p>
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+<ol>
+<li><p>Qual versão de Python é suportada atualmente pelo App Engine?
+A versão suportada atualmente é a versão 2.7. Com esta versão possui várias atualizações, como por exemplo 2.7.1 , 2.7.2 por assim adiante, todas essas versões podem ser utilizadas.</p></li>
+<li><p>Para que serve o SDK do App Engine?
+O sdk do appengine fornece a plataforma necessária para que o desenvolvedor hospede seu código web na plataforma google, facilitando sua própria vida sem se preocupar com a configuração de servidores (como por exemplo a amazon), ou com a configuração de banco de dados relacionais (como por exemplo mysql). Esse plataforma fornecida pode ser utilizada com as lnguagens: java e python.</p></li>
+<li><p>Qual a vantagem de colocar ferramentas instaladas no path do Sistema Operacional?
+A grande vantagem é poder executar qualquer comando no terminal independente do diretório que se esteje no momento.</p></li>
+<li><p>O que é e para que serve uma IDE?
+As IDE são softwares que fornecem diversos recursos para facilitar o desenvolvimento do código fonte de uma determinada linguagem de programação. Alguns frameworks fornecem suporte para mais de uma linguagem de programação. 
+Estes recursos podem ser configurados com frameworks especificos de cada linguagem ou da própria IDE. Facilita na organização dos códigos, na independência da aplicação com o sistema operacional, entre outros recursos especificos de cada IDE.</p></li>
+<li><p>Como se chama o arquivo de configuração de uma aplicação App Engine?
+Este arquivo se chama app.yaml .</p></li>
+<li><p>Qual o domínio padrão para acessar aplicações App Engine na internet?
+O dominio padrão é <a href="http://www.nomeDaAplicacao.appspot.com.br">www.nomeDaAplicacao.appspot.com.br</a>.</p></li>
+</ol><p><strong>## Capítulo II</strong>
+1. Qual o nome do arquivo de configuração do Google App Engine?
+    Este arquivo se chama app.yaml .</p>
 
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+<ol>
+<li><p>Para que serve o item application do arquivo de configuração?
+Para identificar a aplicação.</p></li>
+<li><p>Para que serve o item version do arquivo de configuração?
+É utilizada para verificar qual é a versão (version) da aplicação quando a aplicação for publicada.</p></li>
+<li><p>Qual endereço deve ser utilizado para acessar uma aplicação com id foo e versão 35?
+<a href="http://35-dot-foo.appspot.com.br">http://35-dot-foo.appspot.com.br</a></p></li>
+<li><p>Para que serve a seção libraries do arquivo de configuração?
+É utilizada configurar as bibliotecas que vão ser  utilizadas na aplicação.</p></li>
+<li><p>Para que serve a seção handlers do arquivo de configuração?
+A seção handlers serve para mapear os scripts Python que serão executados de acordo com o path das requisições HTTP.</p></li>
+<li><p>Como são definidos os paths mapeados no arquivo de configuração?
+Os paths são mapeados por expressões regulares.</p></li>
+<li><p>Por que é necessário mapear RequestHandlers nos scripts Python?
+É necessário mapear RequestHandlers nos scripts Python porque é comum a definição de múltiplas classes em um arquivo. Sendo assim somente o mapeamento via arquivo de configuração não é suficiente para definir qual classe será utilizada para processar uma requisição.</p></li>
+<li><p>Para que serve a classe RequestHandler?
+Utilizada para definir o código que irá processar uma requisição HTTP.</p></li>
+<li><p>Como se relacionam os métodos da classe RequestHandler e os do protocolo HTTP?
+Os métodos da classe RequestHandler devem ser sobrescritos para processar as chamadas HTTP de tipo com mesmo nome. Por exemplo, uma chamada HTTP do tipo GET será processada no método sobrescrito get, Uma chamada do tipo POST em um método post e assim or diante.</p></li>
+<li><p>Para que serve o objeto Request?
+Serve como uma interface para acesso às informações sobre uma requisição HTTP.</p></li>
+<li><p>Como se obtém os valores de parâmetros enviados via query string em uma chamada HTTP
+do tipo GET?
+Esses valores são obtidos utilizando-se o método get do objeto Request. </p></li>
+<li><p>Para que serve o objeto Response?
+O objeto Response server como interface para construção de uma resposta HTTP. Ela contém os dados a serem enviados como resposta a uma requisição.</p></li>
+<li><p>Qual o método do objeto Response serve para enviar strings?
+O método write da classe Response serve para enviar strings.</p></li>
+<li><p>Como é possível enviar uma resposta para redirecionamento?
+Deve ser utilizado o método redirect do objeto RequestHandler, fornecendo como parâmetro o path desejado, no caso de redirecionamento para a mesmo aplicação, ou a url completa em caso contrário.</p></li>
+</ol><p><strong>## Capítulo III</strong></p>
 
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
+<ol>
+<li><p>Para que serve o Virtualenv?
+Serve para isolar nosso ambiente de desenvolvimento de um determinado projeto, assim garantimos que um pacote instalado não interfira nos demais que projetos que rodam na sua máquina.</p></li>
+<li><p>Qual a função do arquivo convention.py?
+O arquivo convention.py serve para fazer a ligação entre o Tekton e o Wepapp2. </p></li>
+<li><p>Por que é necessário incluir bibliotecas através de código no arquivo convention.py?
+É necessário incluir bibliotecas através de código no arquivo convention.py porque diferente de servidores tradicionais, na plataforma GAE não se tem acesso ao Sistema Operacional para se poder instalar as bibliotecas utilizando virtualenv e pip.</p></li>
+<li><p>Como ficaria a declaração de uma função para tratar a execução de chamada no path
+/usuario/salvar?nome=Renzo&amp;idade=31?
+A declaração da função seria def salvar(nome,idade) e deveria constar no script usuario.py.</p></li>
+<li><p>Como se diferenciam parâmetros recebidos por injeção de dependência dos recebidos via
+requisição HTTP?
+Parâmetros recebidos via injeção de dependência possuem a convenção de conter o prefixo “_” antes de seus nomes. Parâmetros recebidos via requisição HTTP são escritos sem esse prefixo.</p></li>
+<li><p>Qual deve ser a posição de parâmetros recebidos via injeção de dependência?
+Parâmetros recebidos via injeção de dependência devem sempre ser os primeiros a serem declarados em uma função.</p></li>
+<li><p>Qual deve ser o parâmetro declarado quando for necessário fazer um redirecionamento?
+Quando for necessário fazer um redirecionamento deve ser declarada a dependência _handler para acessar a instância de RequestHandler que está tratando a requisição. Deve ser utilizado o método redirect desse objeto para se efetuar o redirecionamento.</p></li>
+<li><p>Qual o script e função devem ser utilizados para se calcular paths com base em uma função?
+Deve ser utilizada a função to_path do módulo tekton.router para se calcular o path respectivo a uma função, que deve ser passada como parâmetro.</p></li>
+</ol>
       </section>
-      <footer>
-        <p><small>Hosted on <a href="http://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
-      </footer>
+
     </div>
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-		
+    
   </body>
 </html>
