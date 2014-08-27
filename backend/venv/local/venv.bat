@@ -1,1 +1,0 @@
-/home/rogerio/pycharmProjects/projeto/backend/venv/venv.bat
